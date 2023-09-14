@@ -1,0 +1,95 @@
+ /* Setjum inn „reset“ sem fjarlægir margin og padding af öllu */
+ * {
+  margin: 0;
+  padding: 0;
+}
+
+/* Reiknum stærð á öllum boxum sem border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+body {
+  font-family: 'Lora', 'Georgia', serif;
+  font-weight: 400;
+}
+h1, h2, h3 {
+  margin-bottom: 1rem;
+  font-family: 'Lora', 'Georgia', serif;
+  font-weight: 700;
+}
+/* og látum erfast á allt */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* hjálpar class sem felur sjónrænt en skjálesarar lesa */
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+} 
+
+  header {
+    display: block;
+    width: 100%;
+  
+    padding: 1rem;
+    background-color: #2f0505;
+    color: #fff9ee;
+    text-align: center;
+    border-bottom: 8px solid #ffe7ae;
+
+    /* Nav */
+  }
+  nav {
+    padding: 1rem;
+    background-color: #fff9ee;
+    color: #2f0505;
+  }
+  nav ul {
+    text-align: center;
+  }
+  nav ul li {
+    display: inline;
+    padding: 0 0.5rem;
+  }
+/* Main */
+main {
+  padding: 1rem;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 900px;
+}
+main .content .box {
+  display: inline-block;
+  width: 50%;
+  float: left;
+}
+hr {
+  border: 1px solid #ffe7ae;
+}
+ /* Footer */
+ footer {
+  background-color: #2f0505;
+  color: #fff9ee;
+  border-top: 8px solid #ffe7ae;
+ }
+  footer .content {
+    width: 100%;
+    max-width: 900px;
+    padding: 1rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  footer .content .box {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+  }
