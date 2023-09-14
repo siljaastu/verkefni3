@@ -18,6 +18,9 @@ h1, h2, h3 {
   font-family: 'Lora', 'Georgia', serif;
   font-weight: 700;
 }
+p {
+  margin-bottom: 1rem;
+}
 /* og látum erfast á allt */
 *,
 *:before,
@@ -52,6 +55,7 @@ h1, h2, h3 {
     padding: 1rem;
     background-color: #fff9ee;
     color: #2f0505;
+    margin-bottom: 1rem;
   }
   nav ul {
     text-align: center;
@@ -72,9 +76,48 @@ main .content .box {
   width: 50%;
   float: left;
 }
+.content {
+  overflow:auto;
+}
 hr {
   border: 1px solid #ffe7ae;
+  margin: 1rem 0;
 }
+/* Matseðill - tafla */
+table {
+  border-collapse: collapse;
+  height: 400px;
+  margin-bottom: 1rem;
+}
+table tbody tr:nth-child(odd) {
+  background-color: #ffe7ae;
+  line-height: 2rem;
+}
+/* Pöntunarsíða */
+form {
+  width: 100%;
+  max-width: 900px;
+}
+form legend {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+}
+form fieldset {
+  border: 1px solid #ffe7ae;
+  padding: 0.5rem;
+  line-height: 2rem;
+}
+form .content .box {
+display: inline-block;
+width: 50%;
+}
+form label, input, select {
+  display: block;
+}
+form input, checkbox {
+  padding: 0 0.5rem;
+}
+
  /* Footer */
  footer {
   background-color: #2f0505;

@@ -14,6 +14,19 @@
     />
     <meta property="og:image" content="/myndir/sharing.jpg" />
     <title>Pantanir</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <header>
@@ -22,6 +35,7 @@
         Pantaðu borð og mættu til okkar eða pantaðu mat sem við sendum þér eða
         þú sækir.
       </p>
+    </header>
       <p class="sr-only"><a href="#efni">Beint í efni</a></p>
       <nav>
         <ul>
@@ -31,9 +45,10 @@
           <li><strong>Panta mat</strong></li>
         </ul>
       </nav>
-    </header>
     <main id="efni">
       <form>
+        <div class="content">
+        <div class="box">
         <fieldset>
           <legend>Panta borð</legend>
           <label for="when">Hvenær viltu koma?</label>
@@ -56,20 +71,10 @@
           <label for="comment">Eitthvað sem þú vilt taka fram?</label>
           <textarea name="comment" id="comment"></textarea>
         </fieldset>
+        </div>
+        <div class="box">
         <fieldset>
-          <!--  <datalist id="matsedill">
-            <option value="1">Lasagna</option>
-            <option value="2">Sveppa risotto</option>
-            <option value="3">Ferskt pasta með pestó</option>
-            <option value="4">Quesadilla</option>
-            <option value="5">Falafel með hummus</option>
-            <option value="6">Súpa dagsins</option>
-            <option value="7">Kryddaðar sætkartöflur</option>
-            <option value="8">Hamborgari</option>
-            <option value="9">Pizza</option>
-          </datalist> -->
           <legend>Panta mat</legend>
-
           <label for="food">Réttur #1</label>
           <select id="food" name="food">
             <option value="">Veldu rétt</option>
@@ -147,6 +152,8 @@
           <label for="address">Heimilisfang</label>
           <input id="address" type="text" />
         </fieldset>
+        </div>
+        <div class="box">
         <fieldset>
           <legend>Þínar upplýsingar</legend>
           <label for="name">Nafn*</label>
@@ -165,6 +172,8 @@
             <input id="telephone" type="tel" required placeholder="000-0000" />
           </div>
         </fieldset>
+        </div>
+        <div class="box">
         <fieldset>
           <legend>Samþykkja og panta</legend>
           <label for="agree">Ég samþykki skilmála veitingastaðarins</label>
@@ -173,7 +182,10 @@
             <button>Panta</button>
           </div>
         </fieldset>
+        </div>
+        </div>
       </form>
+      <hr>
       <p><a href="/index.html">Aftur á forsíðu</a></p>
     </main>
     <footer>
